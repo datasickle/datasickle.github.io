@@ -1,0 +1,2426 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="命题逻辑, 霜晨月">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>命题逻辑 | 霜晨月</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.2.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="霜晨月" type="application/atom+xml">
+</head>
+
+
+
+
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">霜晨月</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a target="_blank" rel="noopener" href="https://shuangchenyue.top/" class="waves-effect waves-light">
+
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>正堂</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
+    </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="https://datasickle.gitee.io/">
+          
+          <i class="fas fa-house-damage" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>镜像站</span>
+        </a>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>路引</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友人帐</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">霜晨月</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="javascript:;">
+			
+				<i class="fa-fw fas fa-home"></i>
+			
+			正堂
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="https://datasickle.gitee.io/ " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-house-damage" style="position: absolute;left:50px" ></i>
+			      
+		          <span>镜像站</span>
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			路引
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友人帐
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('在？输密码🔒')).toString(CryptoJS.enc.Hex)) {
+                alert('⚠️警告！密码错误！有坏人入侵！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/proposition-logic/proposition-logic-cover.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">命题逻辑</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <style> 
+            /*小屏幕下(手机类)的样式*/ 
+            @media only screen and (max-width: 600px) { 
+                .ipage { 
+                    padding: 15px 23px 29px; 
+                } 
+                .ipage:after { 
+                    left: 36px; 
+                } 
+                .ipage::before { 
+                    right: 36px; 
+                } 
+                .ipage p { 
+                    padding: 0 0.9em; 
+                } 
+            } 
+            </style>
+
+
+
+
+<!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">
+                                <span class="chip bg-color">离散数学</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%91%BD%E9%A2%98%E9%80%BB%E8%BE%91/">
+                                <span class="chip bg-color">命题逻辑</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/" class="post-category">
+                                离散数学
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-12-20
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2021-01-04
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    5.9k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    26 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <p>本文所对应的习题：</p>
+<blockquote>
+<p>点我传送👉<a href="">命题逻辑-习题</a></p>
+</blockquote>
+<h1 id="1-命题逻辑"><a href="#1-命题逻辑" class="headerlink" title="1.命题逻辑"></a>1.命题逻辑</h1><h2 id="命题"><a href="#命题" class="headerlink" title="命题"></a>命题</h2><blockquote>
+<p>能<strong>分辨/判断真假</strong>的<strong>陈述句</strong>。也可以说命题是<strong>表达判断</strong>的<strong>陈述句</strong>。</p>
+</blockquote>
+<p>$\bullet$陈述句是命题的<strong>必要不充分</strong>条件。例如：我正在说谎</p>
+<p>​    因为命题构成的<strong>必要条件</strong>就是<strong>陈述句</strong>，例句确实是陈述句，所以是<strong>必要</strong>的。</p>
+<p>​    但命题有其<strong>真值</strong>，而例句<strong>无法判断</strong>其<strong>真假</strong>，所以这句话又是<strong>不充分</strong>的。</p>
+<p>$\bullet$因为例句为<strong>悖论</strong>：从它的真能推断出他的假，也能从假推断出真</p>
+<blockquote>
+<p>若真值为T，那么他就正在说谎话，那么”我正在说谎”这句话就是假的。</p>
+</blockquote>
+<p>​    也就是说，”我正在说谎”为真，那么我确实就在说谎，所以这句话是假的。</p>
+<blockquote>
+<p>若真值为F，那么他就没有说谎话，那么”我正在说谎”这句话就是真的。</p>
+</blockquote>
+<p>​    也就是说，”我正在说谎”为假，那么我就没有说谎，所以这句话是真的。</p>
+<h2 id="真值"><a href="#真值" class="headerlink" title="真值"></a>真值</h2><blockquote>
+<p>一个命题的判断只有两种结果：<strong>真</strong>$(true)$或者<strong>假</strong>$(false)$，将这种结果赋值给命题，得到的就是命题的<strong>真值</strong>。</p>
+</blockquote>
+<p>命题的真值为真：一个命题所表达的<strong>判断</strong>与<strong>客观</strong>情况<strong>一致</strong>，记作<strong>T</strong>$(true)$。</p>
+<p>如：北京是中国的首都。</p>
+<p>命题的真值为假：一个命题所表达的<strong>判断</strong>与<strong>客观</strong>情况<strong>不一致</strong>，记作<strong>F</strong>$(false)$</p>
+<p>如：韩国有银河系那么大。</p>
+<p>$\bullet$判断一句话是否为命题有两个关键：</p>
+<p>$(1)$.是陈述句</p>
+<p>$(2)$.有且只有一个真值</p>
+<h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h2><blockquote>
+<p>原子命题（简单命题）：<strong>不能</strong>再<strong>分解</strong>成更简单陈述句的命题</p>
+<p>复合命题（分子命题）：由若干个<strong>联结词</strong>，<strong>标点符号</strong>及<strong>原子命题</strong>复合构成的命题</p>
+</blockquote>
+<h2 id="联结词"><a href="#联结词" class="headerlink" title="联结词"></a>联结词</h2><blockquote>
+<p>命题之间的<strong>操作符</strong>（运算符）</p>
+</blockquote>
+<p>1：否定    $\neg P$     “非”运算</p>
+<blockquote>
+<p>$\neg P$的值与P相反</p>
+</blockquote>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">P</th>
+<th style="text-align:center">$\neg P$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">T</td>
+<td style="text-align:center">F</td>
+</tr>
+<tr>
+<td style="text-align:center">F</td>
+<td style="text-align:center">T</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>2：合取    $P \wedge Q$     “与”运算</p>
+<blockquote>
+<p>只有在P与Q<strong>均为</strong>真时，$P \wedge Q$ 才为真。</p>
+</blockquote>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">P</th>
+<th style="text-align:center">Q</th>
+<th style="text-align:center">$P \wedge Q$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">T</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+</tr>
+<tr>
+<td style="text-align:center">F</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">F</td>
+</tr>
+<tr>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+</tr>
+<tr>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>3：析取    $P \vee Q$    “或”运算</p>
+<blockquote>
+<p>当P或Q<strong>其中一个</strong>为真时，$P \vee Q$便为真。</p>
+</blockquote>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">P</th>
+<th style="text-align:center">Q</th>
+<th style="text-align:center">$P \vee Q$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">T</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">T</td>
+</tr>
+<tr>
+<td style="text-align:center">F</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+</tr>
+<tr>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+</tr>
+<tr>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>4：条件    $P \to Q$    “若P则Q”</p>
+<blockquote>
+<p>当前提$(P)$为真时，结论$(Q)$为假时，则命题无效，真值为假，其他情况均为真。</p>
+</blockquote>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">P</th>
+<th style="text-align:center">Q</th>
+<th style="text-align:center">$P \to Q$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">T</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+</tr>
+<tr>
+<td style="text-align:center">F</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+</tr>
+<tr>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+</tr>
+<tr>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">T</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>5：双条件    $P \leftrightarrow Q$    “P当且仅当Q”    等同于$(P \to Q) \wedge (Q \to P)$</p>
+<blockquote>
+<p>当前提$(P)$成为真时，<strong>只能</strong>得出$(Q)$这个结论。也就是说，当结论$(Q)$存在时，那么前提P一定存在，可以推导。当P为真时，Q一定为真。当P为假时，Q一定为假。P和Q的值<strong>一致</strong>时，$P \leftrightarrow Q$的真值才为真。</p>
+</blockquote>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">P</th>
+<th style="text-align:center">Q</th>
+<th style="text-align:center">$P \leftrightarrow Q$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">T</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+</tr>
+<tr>
+<td style="text-align:center">F</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">F</td>
+</tr>
+<tr>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+</tr>
+<tr>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">T</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="命题公式"><a href="#命题公式" class="headerlink" title="命题公式"></a>命题公式</h2><blockquote>
+<p>命题公式 = 复合命题（合成公式）</p>
+</blockquote>
+<p>$\bullet$单个命题变元是命题公式（如P）</p>
+<p>$\bullet$如果 A 是命题公式, 则$\neg A$也是</p>
+<p>$\bullet$如果 A, B 是命题公式, 则 $A\wedge B, A\vee B, A\to B, A\leftrightarrow B $也是</p>
+<p>$\bullet$有限次使用上面 1~3 得到的符号串都是命题公式</p>
+<h2 id="联结词优先级"><a href="#联结词优先级" class="headerlink" title="联结词优先级"></a>联结词优先级</h2><blockquote>
+<p>$\neg,\wedge,\vee,\to,\leftrightarrow$</p>
+<p>口诀，”非”一”合”二”析”第三，”双条件”跟在屁股后面。</p>
+</blockquote>
+<h2 id="翻译"><a href="#翻译" class="headerlink" title="翻译"></a>翻译</h2><blockquote>
+<p>理解根本逻辑含义</p>
+</blockquote>
+<hr>
+<h1 id="2-等价"><a href="#2-等价" class="headerlink" title="2.等价"></a>2.等价</h1><blockquote>
+<p>给定两个命题公式$A,B$，如果其<strong>真值</strong>在<strong>所有变元</strong>的<strong>不同指派</strong>下总是<strong>相同</strong>，就说$A$与$B$逻辑相等，也即等价。记作$A \iff B$。</p>
+</blockquote>
+<p>例：$P\leftrightarrow Q  \iff (P\to Q)\wedge(Q\to P)$</p>
+<p>真值表：</p>
+<p>若两个命题公式的真值表相同，则它们必定等价。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">P</th>
+<th style="text-align:center">Q</th>
+<th style="text-align:center">$P\leftrightarrow Q$</th>
+<th style="text-align:center">$(P\to Q)\wedge(Q\to P)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">T</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+</tr>
+<tr>
+<td style="text-align:center">F</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+</tr>
+<tr>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+</tr>
+<tr>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="十大等价式"><a href="#十大等价式" class="headerlink" title="十大等价式"></a>十大等价式</h2><ol>
+<li><p>对合律：$\neg \neg P \iff P$ </p>
+</li>
+<li><p>幂等律：$P\vee P \iff P$ ，$P\wedge P \iff P$</p>
+</li>
+<li><p>结合律：$\begin {cases}(P\vee Q)\vee R \iff P\vee(Q\vee R)\\ (P\wedge Q)\wedge R \iff P\wedge(Q\wedge R)\end{cases}$</p>
+</li>
+<li><p>交换律：$\begin {cases} P\vee Q\iff Q\vee P\\ P\wedge Q\iff Q\wedge P \end{cases}$</p>
+</li>
+<li><p>分配律：$\begin {cases}P\vee (Q\wedge R) \iff (P\vee Q)\wedge (P\vee R)\\ P\wedge (Q\vee R) \iff (P\wedge Q)\vee (P\wedge R)\end{cases}$</p>
+</li>
+<li><p>吸收律：$\begin {cases}P\vee (P\wedge Q) \iff P\\ P\wedge (P\vee Q) \iff P\end{cases}$</p>
+</li>
+<li><p>德·摩根律：$\begin{cases} \neg(P\vee Q) \iff \neg P \wedge \neg Q \\ \neg (P\wedge Q) \iff \neg P \vee \neg Q  \end{cases}$</p>
+</li>
+<li><p>同一律：$\begin{cases}P\vee F \iff P \\ P\wedge T \iff P\end{cases}$</p>
+</li>
+<li><p>零律：$\begin{cases}P\vee T \iff T \\ P\wedge F \iff F \end{cases}$</p>
+</li>
+<li><p>否定律（互补律）：$\begin{cases}P\vee \neg P \iff T \\ P\wedge \neg P \iff F \end{cases}$ 类似于幂等律</p>
+</li>
+</ol>
+<h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><p>条件命题等价式：</p>
+<p>$P\leftrightarrow Q \iff (P\to Q)\wedge(Q\to P)$</p>
+<p>$P\to Q \iff \neg P \vee Q $</p>
+<p>$P \to Q \iff \neg Q \to \neg P$</p>
+<p>$P\leftrightarrow Q \iff (\neg P \vee Q)\wedge (P\vee \neg Q)$（为上个式子的变形）</p>
+<p>$P \leftrightarrow Q \iff (P \wedge Q)\vee (\neg P \wedge \neg Q)$</p>
+<p>等价公式的证明方法：</p>
+<p>1.列真值表。若两个公式真值表一样，则必定等价。</p>
+<p>2.用等价公式变换（用置换定律）。</p>
+<h2 id="等价置换"><a href="#等价置换" class="headerlink" title="等价置换"></a>等价置换</h2><blockquote>
+<p>A是一个命题公式，X是A的子公式（X是A中的一部分且也是合成公式），若X$\iff$Y，用Y代替A中的X，得到新公式B，则$A\iff B$。</p>
+</blockquote>
+<p><strong>例题：</strong></p>
+<p>证明：$(\neg P \vee Q)\to (P\wedge Q) \iff P$</p>
+<p>​            $(\neg P \vee Q)\to (P\wedge Q)$    左边</p>
+<p>​            $\neg(\neg P \vee Q)\vee (P \wedge Q)$    （公式$E_{11}$）</p>
+<p>​            $(\neg \neg P\wedge \neg Q)\vee(P \wedge Q)$    （底·摩根定律）</p>
+<p>​            $(P\wedge \neg Q) \vee (P\wedge Q)$    （对合律）</p>
+<p>​            $P\wedge(\neg Q \vee Q)$    （分配律）</p>
+<p>​            $P\wedge T$    （否定律/互补律）</p>
+<p>​            $P$</p>
+<p>​            所以，左边等于右边</p>
+<p>证毕</p>
+<h2 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h2><p>1.自反性：对任何命题公式A，都有$A \iff B$</p>
+<p>2.对称性：若$A \iff B$，则$B \iff A$</p>
+<p>3.传递性：若$A\iff B且B \iff C,则有A \iff C $</p>
+<hr>
+<h1 id="4-重言式-矛盾式-可满足的"><a href="#4-重言式-矛盾式-可满足的" class="headerlink" title="4.重言式/矛盾式/可满足的"></a>4.重言式/矛盾式/可满足的</h1><h2 id="重言式"><a href="#重言式" class="headerlink" title="重言式"></a>重言式</h2><blockquote>
+<p>一个<strong>命题公式</strong>的<strong>真值永远是T</strong>，就称作重言式，或永真式。若命题公式$A \iff T$，则为重言式。</p>
+</blockquote>
+<p>也就是说，如果一个命题公式，在它的任意解释下，其真值永远为真。例如：$\neg P \vee P$</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">P</th>
+<th style="text-align:center">$\neg P$</th>
+<th style="text-align:center">$\neg P \vee P$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">T</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">T</td>
+</tr>
+<tr>
+<td style="text-align:center">F</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="矛盾式"><a href="#矛盾式" class="headerlink" title="矛盾式"></a>矛盾式</h2><blockquote>
+<p>一个<strong>命题公式</strong>的<strong>真值永远为</strong>F，就称做矛盾式，或永假式。若命题公式$A \iff F$，则为矛盾式。</p>
+</blockquote>
+<p>也就是说，一个命题公式，无论其命题变元取任何值，其真值永远为假。例如：$\neg P \wedge P$</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">P</th>
+<th style="text-align:center">$\neg P$</th>
+<th style="text-align:center">$\neg P \wedge P$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">T</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+</tr>
+<tr>
+<td style="text-align:center">F</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">F</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="可满足的"><a href="#可满足的" class="headerlink" title="可满足的"></a>可满足的</h2><blockquote>
+<p>一个<strong>命题公式</strong>，其真值<strong>可能</strong>为T，<strong>也可能</strong>为F，就称做可满足的。</p>
+</blockquote>
+<p>次要$\begin{cases}两个重言式的合取还是重言式 \\ 一个重言式对同一分量，用任何合成公式置换，还是重言式\end{cases}$</p>
+<hr>
+<h1 id="5-蕴含"><a href="#5-蕴含" class="headerlink" title="5.蕴含"></a>5.蕴含</h1><blockquote>
+<p>当且仅当$P \to Q$是重言式，称作P蕴含Q，记作$P \Longrightarrow Q$。即 若$P \to Q \iff T$，则$P\Longrightarrow Q$。</p>
+</blockquote>
+<p>重言蕴含式的两种基本证明方法：</p>
+<p>观察$P \to Q$的真值表，若$P\to Q$为永真式，那么就不会出现列表第三行真值为假的情况。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">P</th>
+<th style="text-align:center">Q</th>
+<th style="text-align:center">$P \to Q$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+</tr>
+<tr>
+<td style="text-align:center">F</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+</tr>
+<tr>
+<td style="text-align:center"><u>T</u></td>
+<td style="text-align:center"><u>F</u></td>
+<td style="text-align:center"><u>F</u></td>
+</tr>
+<tr>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">T</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="基本证明方法"><a href="#基本证明方法" class="headerlink" title="基本证明方法"></a>基本证明方法</h2><p>于是，有以下两种证明方法：</p>
+<blockquote>
+<p>1.假设前件P为真，如果能在此假设下能推出后件Q也为真，则$P\Longrightarrow Q$成立。</p>
+</blockquote>
+<p>例：求证$P\wedge (P\to Q) \Longrightarrow Q$</p>
+<p>​        证明：设$P\wedge (P\to Q)$为真，则P为真， $P \to Q$也为真，则Q亦为真。</p>
+<p>​        于是$P\wedge (P\to Q) \Longrightarrow Q$成立。</p>
+<p>证毕</p>
+<hr>
+<blockquote>
+<p>2.假设后件Q为假，如果能在此假设下推出前件P也为假，则$P\Longrightarrow Q$成立。</p>
+</blockquote>
+<p>例：求证$((A\wedge B)\to C)\wedge \neg D \wedge (\neg C \vee D) \Longrightarrow \neg A \vee \neg B$</p>
+<p>​        证明：设$\neg A \vee \neg B$为F。</p>
+<p>​                    则$\neg A,\neg B$为F，$A,B$就为T。</p>
+<p>​                    因为前件中，C和D的真值不知道，所以分情况讨论。</p>
+<p>​        第一种情况：</p>
+<p>​                    若C为F，则$(A\wedge B)\to C$就为F，那么$((A\wedge B)\to C)\wedge \neg D$也是F，则$((A\wedge B)\to C)\wedge \neg D \wedge (\neg C \vee D)$亦为F。</p>
+<p>​                    所以$((A\wedge B)\to C)\wedge \neg D \wedge (\neg C \vee D) \Longrightarrow \neg A \vee \neg B$成立。</p>
+<p>​        证毕</p>
+<hr>
+<p>​        第二种情况：</p>
+<p>​                    若C为T，则需要再去讨论D，①若D此时为T，则$\neg D$为F。此时$((A\wedge B)\to C)\wedge \neg D $就是F，</p>
+<p>​                    则$((A\wedge B)\to C)\wedge \neg D \wedge (\neg C \vee D)$则为F。</p>
+<p>​                    所以$((A\wedge B)\to C)\wedge \neg D \wedge (\neg C \vee D) \Longrightarrow \neg A \vee \neg B$成立。</p>
+<p>​        证毕</p>
+<p>​                    在C为T的情况下，再讨论D为F的情况。②若D此时为F，则$\neg D$为T，那么$((A\wedge B)\to C)\wedge \neg D$也为T，</p>
+<p>​                    此时式子变成了：$T\wedge (\neg C \vee D)$。又因为C为T，所以$\neg C$为F，则$\neg C \vee D$就为F，于是$T\wedge F$为F，</p>
+<p>​                    那么$((A\wedge B)\to C)\wedge \neg D \wedge (\neg C \vee D)$便为F。</p>
+<p>​                    所以$((A\wedge B)\to C)\wedge \neg D \wedge (\neg C \vee D) \Longrightarrow \neg A \vee \neg B$成立。</p>
+<p>​        证毕</p>
+<hr>
+<h2 id="十四大蕴含式"><a href="#十四大蕴含式" class="headerlink" title="十四大蕴含式"></a>十四大蕴含式</h2><ol>
+<li><p>$P \wedge Q \Longrightarrow P$     $P \wedge Q \Longrightarrow Q$</p>
+</li>
+<li><p>$P \Longrightarrow P \wedge Q$</p>
+</li>
+<li><p>$Q \Longrightarrow P \wedge Q$</p>
+</li>
+<li><p>$\neg P \Longrightarrow P \to Q$      （3的变形）</p>
+</li>
+<li><p>$Q \Longrightarrow P \to Q$        （4的变形）</p>
+</li>
+<li><p>$\neg (P \to Q) \Longrightarrow P$    （1的变形）</p>
+</li>
+<li><p>$\neg (P \to Q) \Longrightarrow \neg Q$  （2的变形）</p>
+</li>
+<li><p>$P \wedge (P \to Q) \Longrightarrow Q$</p>
+</li>
+<li><p>$\neg Q \wedge (P \to Q) \Longrightarrow P$</p>
+</li>
+<li><p>$\neg P \wedge (P \vee Q) \Longrightarrow Q$</p>
+</li>
+<li><p>$(P \to Q) \wedge (Q \to R) \Longrightarrow P \to R$</p>
+</li>
+<li><p>$(P \vee Q) \wedge (P \to R) \wedge (Q \to R) \Longrightarrow R$</p>
+</li>
+<li><p>$(P \to Q) \wedge (R \to S) \Longrightarrow (P \wedge R) \to (Q \wedge S)$</p>
+</li>
+<li><p>$(P \longleftrightarrow Q) \wedge (Q \longleftrightarrow R) \Longrightarrow (P \longleftrightarrow R)$</p>
+<p>注：以上蕴含式均可使用“基本证明方法”来证明。</p>
+</li>
+</ol>
+<h2 id="性质-1"><a href="#性质-1" class="headerlink" title="性质"></a>性质</h2><ol>
+<li>自反性：对任何命题公式A，都有$A \Longrightarrow A$</li>
+<li>传递性：若$A \Longrightarrow B$且$B \Longrightarrow C$，则有$A \Longrightarrow C$</li>
+<li>反对称性：若$A \Longrightarrow B$且$B \Longrightarrow A$，则$A \Leftrightarrow B$</li>
+<li>若$A \Longrightarrow B$且$A \Longrightarrow C$，则有$A \Longrightarrow B \wedge C$</li>
+<li>若$A \Longrightarrow B$且$C \Longrightarrow B$，则有$A \vee C\Longrightarrow B$</li>
+</ol>
+<h2 id="定理"><a href="#定理" class="headerlink" title="定理"></a>定理</h2><blockquote>
+<p>P,Q为任意两个命题，$P \iff Q$的充要条件（当且仅当 $iff$）是$P \Longrightarrow Q$且$Q \Longrightarrow P$。</p>
+</blockquote>
+<hr>
+<h1 id="6-对偶式"><a href="#6-对偶式" class="headerlink" title="6.对偶式"></a>6.对偶式</h1><blockquote>
+<p>在一个只含有联结词$\neg \wedge \vee$的公式A中，将$\wedge$换成$\vee$，将$\vee$换成$\wedge$，T换成F，F换成T，其余部分不变，得到另一个公式<script type="math/tex">A^*</script>，称A与<script type="math/tex">A^*</script>互为对偶式。</p>
+</blockquote>
+<p>例：</p>
+<p>$(P\vee Q)\wedge R$ 的对偶式为 $(P\wedge Q)\vee R$</p>
+<h2 id="定理-1"><a href="#定理-1" class="headerlink" title="定理"></a>定理</h2><p>1.</p>
+<blockquote>
+<p>$A \iff B$ ，<script type="math/tex">A^* \iff B^*</script></p>
+</blockquote>
+<p>2.</p>
+<blockquote>
+<p>令$A(P_1,P_2,…,P_n)$是一个只含有联结词$\neg \wedge \vee$的命题公式，则$\neg A(P_1,P_2,…,P_n) \iff A^*(\neg P_1,\neg P_2,…,\neg P_n)$。</p>
+</blockquote>
+<p>此定理可以反复用底·摩根定律证明。</p>
+<p><strong>推论</strong></p>
+<blockquote>
+<p>$A(\neg P_1,\neg P_2,…,\neg P_n \iff \neg A^*(P_1,P_2,…,P_n) $</p>
+</blockquote>
+<hr>
+<h1 id="7-其他联结词"><a href="#7-其他联结词" class="headerlink" title="7.其他联结词"></a>7.其他联结词</h1><p>1.不可兼析取    $P\bigtriangledown Q$    “异或”</p>
+<blockquote>
+<p>在P与Q的真值不相同时，$P \bigtriangledown Q$的真值为T。“异”表示不同，所以不同为真，相同为假。</p>
+</blockquote>
+<p>$P\bigtriangledown Q \iff \neg (P\leftrightarrow Q)$</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">P</th>
+<th style="text-align:center">Q</th>
+<th style="text-align:center">$P \bigtriangledown Q$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">T</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">T</td>
+</tr>
+<tr>
+<td style="text-align:center">F</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+</tr>
+<tr>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">F</td>
+</tr>
+<tr>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>2.条件否定    $P\underrightarrow{c} Q$</p>
+<blockquote>
+<p>当且仅当P为T,Q为F时，$P\underrightarrow{c} Q$为T。也就是说，当前件为真，后件为假，$P\underrightarrow{c} Q$为真。条件否定成立，则真值为T。</p>
+</blockquote>
+<p>$P\underrightarrow{c} Q \iff \neg (P \to Q)$</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">P</th>
+<th style="text-align:center">Q</th>
+<th style="text-align:center">$P\underrightarrow{c} Q$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">T</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">T</td>
+</tr>
+<tr>
+<td style="text-align:center">F</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">F</td>
+</tr>
+<tr>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">F</td>
+</tr>
+<tr>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>3.与非    $P\uparrow Q$</p>
+<blockquote>
+<p>当且仅当P与Q为T时，$P\uparrow Q$为F。其他情况均为T。</p>
+</blockquote>
+<p>$P\uparrow Q \iff \neg(P\wedge Q)$</p>
+<p>$P\uparrow Q \iff \neg P$</p>
+<p>$(P\uparrow Q) \uparrow (P\uparrow Q) \iff P\wedge Q$</p>
+<p>$(P\uparrow P) \uparrow (Q\uparrow Q) \iff P\vee Q$</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">P</th>
+<th style="text-align:center">Q</th>
+<th style="text-align:center">$P\uparrow Q$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">T</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">T</td>
+</tr>
+<tr>
+<td style="text-align:center">F</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+</tr>
+<tr>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">F</td>
+</tr>
+<tr>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">T</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>4.或非    $P\downarrow Q$</p>
+<blockquote>
+<p>当且仅当P与Q为F时，$P \downarrow Q$为T。其他情况均为F。</p>
+</blockquote>
+<p>$P\downarrow Q \iff \neg(P\vee Q)$</p>
+<p>$P\downarrow P \iff \neg P$</p>
+<p>$(P\downarrow Q)\downarrow (P\downarrow Q)\iff P\vee Q$</p>
+<p>$(P\downarrow P)\downarrow(Q\downarrow Q)\iff P\wedge Q$</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">P</th>
+<th style="text-align:center">Q</th>
+<th style="text-align:center">$P\downarrow Q$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">T</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+</tr>
+<tr>
+<td style="text-align:center">F</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">F</td>
+</tr>
+<tr>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">F</td>
+</tr>
+<tr>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">T</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h1 id="8-联结词组（完备集）"><a href="#8-联结词组（完备集）" class="headerlink" title="8.联结词组（完备集）"></a>8.联结词组（完备集）</h1><blockquote>
+<p>${\neg,\wedge,\vee,\to,\leftrightarrow}$，${\neg,\wedge,\vee}$</p>
+</blockquote>
+<h2 id="最小联结词组"><a href="#最小联结词组" class="headerlink" title="最小联结词组"></a>最小联结词组</h2><blockquote>
+<p>${\neg,\vee}$，${\neg,\wedge}$，${\uparrow}$，${\downarrow}$</p>
+<p>结合<strong>德摩根律</strong>和<strong>条件命题等价式</strong>, 可以将<strong>任何公式</strong>化成<strong>只含</strong>有<strong>最小联结词组</strong>的形式</p>
+</blockquote>
+<hr>
+<h1 id="9-范式"><a href="#9-范式" class="headerlink" title="9.范式"></a>9.范式</h1><h2 id="合取范式"><a href="#合取范式" class="headerlink" title="合取范式"></a>合取范式</h2><blockquote>
+<p>形如$A_1 \wedge A_2 \wedge … \wedge A_n(n\ge 1)$</p>
+<p>其中每个项$A_i$都是<strong>命题变元</strong>或其<strong>否定形式</strong>的<strong>析取式</strong>，称该公式为A的合取范式。</p>
+</blockquote>
+<p>如下：</p>
+<p>$(P \vee Q) \wedge (\neg Q) \wedge (\neg P \vee \neg Q \vee R)$</p>
+<p>括号内都是析取”$\vee$”或非”$\neg$”式，括号外都是合取”$\wedge$”式，这样的式子式合取范式。</p>
+<h2 id="析取范式"><a href="#析取范式" class="headerlink" title="析取范式"></a>析取范式</h2><blockquote>
+<p>形如$A_1 \vee A_2 \vee … \vee A_n(n\ge 1)$</p>
+<p>其中每个项$A_i$都是<strong>命题变元</strong>或其<strong>否定形式</strong>的<strong>合取式</strong>，称该公式为A的析取范式。</p>
+</blockquote>
+<p>如下：</p>
+<p>$(P \wedge Q \wedge R \wedge S) \vee (P) \vee (R) \vee (Q \wedge \neg R \wedge \neg S)$</p>
+<p>括号内都是合取$” \wedge “$或非$”\neg”$式，括号外都是析取$”\vee”$式，这样的式子是析取范式。</p>
+<h2 id="写法"><a href="#写法" class="headerlink" title="写法"></a>写法</h2><ol>
+<li>去掉”$\to$和”$\leftrightarrow$”</li>
+<li>将非”$\neg$”移到命题变元前。用公式：$\neg A (P_1,P_2,…,P_n) \iff A^*(\neg P_1,\neg P_2,…,\neg P_n)$</li>
+<li>用分配律，幂等律等公式进行整理，使之称为所要求的形式。</li>
+</ol>
+<hr>
+<h1 id="10-小项"><a href="#10-小项" class="headerlink" title="10.小项"></a>10.小项</h1><blockquote>
+<p>$n$个命题<strong>变元</strong>的<strong>合取式</strong>，其中每个变元必出现且仅出现一次（以<strong>本身</strong>或<strong>否定形式</strong>出现），称作布尔合取，也称作小项。</p>
+</blockquote>
+<p>例如：含有两个命题变元$(P,Q)$的小项 $P\wedge Q,P\wedge \neg Q,\neg P\wedge Q,\neg P\wedge \neg Q$</p>
+<blockquote>
+<p>若有$n$个变元，则有$2^n$个小项。例如上面有2个变元，则有$2^2=4$个小项。</p>
+</blockquote>
+<h2 id="小项编码"><a href="#小项编码" class="headerlink" title="小项编码"></a>小项编码</h2><blockquote>
+<ol>
+<li><p>含有$n$个变元的小项的角标用$n$位二进制码表示</p>
+</li>
+<li><p>变元按字母次序排列</p>
+</li>
+<li><p>用1表示变元本身，0表示其否定</p>
+</li>
+<li>小项用$m$表示</li>
+</ol>
+</blockquote>
+<p>例如：</p>
+<p>$m_{00} \iff \neg P \wedge \neg Q$</p>
+<p>$m_{01} \iff \neg P \wedge Q$</p>
+<p>$m_{10} \iff P\wedge \neg Q$</p>
+<p>$m_{11} \iff P\wedge Q$</p>
+<p>$m_{101} \iff P\wedge \neg Q \wedge R$</p>
+<p>等等…</p>
+<p>一个命题公式有P和Q两个变元，那么他的小项就有4个。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center">$m_{11}$</th>
+<th style="text-align:center">$m_{10}$</th>
+<th style="text-align:center">$m_{01}$</th>
+<th style="text-align:center">$m_{00}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"><strong>P</strong></td>
+<td style="text-align:center"><strong>Q</strong></td>
+<td style="text-align:center">$P\wedge Q$</td>
+<td style="text-align:center">$P\wedge \neg Q$</td>
+<td style="text-align:center">$\neg P\wedge Q$</td>
+<td style="text-align:center">$\neg P\wedge \neg Q$</td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center"><strong>T</strong></td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center"><strong>T</strong></td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+</tr>
+<tr>
+<td style="text-align:center">01</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center"><strong>T</strong></td>
+<td style="text-align:center">F</td>
+</tr>
+<tr>
+<td style="text-align:center">00</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center"><strong>T</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<blockquote>
+<p>每个小项当且仅当其<strong>赋值</strong>和<strong>编码相同</strong>时，其真值位T，其余$2^n-1$组赋值，均使该小项真值为F。</p>
+</blockquote>
+<p>也可以这么表示，用1表示变元本身，0表示其否定。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">P,Q</th>
+<th style="text-align:center">$P\wedge Q$</th>
+<th style="text-align:center">$P\wedge \neg Q$</th>
+<th style="text-align:center">$\neg P \wedge Q$</th>
+<th style="text-align:center">$\neg P \wedge \neg Q$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">真值</td>
+<td style="text-align:center">T,T</td>
+<td style="text-align:center">T,F</td>
+<td style="text-align:center">F,T</td>
+<td style="text-align:center">F,F</td>
+</tr>
+<tr>
+<td style="text-align:center">编码</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">01</td>
+<td style="text-align:center">00</td>
+</tr>
+<tr>
+<td style="text-align:center">表示</td>
+<td style="text-align:center">$m_{11}$</td>
+<td style="text-align:center">$m_{10}$</td>
+<td style="text-align:center">$m_{01}$</td>
+<td style="text-align:center">$m_{00}$</td>
+</tr>
+<tr>
+<td style="text-align:center">十进制</td>
+<td style="text-align:center">$m_3$</td>
+<td style="text-align:center">$m_2$</td>
+<td style="text-align:center">$m_1$</td>
+<td style="text-align:center">$m_0$</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="性质-2"><a href="#性质-2" class="headerlink" title="性质"></a>性质</h2><blockquote>
+<p> 任何两个不同小项的合取都为F，$m_i \wedge m_j \iff F$</p>
+<p>所有小项的析取式为永真式，记作：<script type="math/tex">\displaystyle\sum_{i=0}^{2n-1} mi \iff m_0 \vee m_1 \vee m_2 \vee ... \vee_{2n-1} \iff T</script></p>
+</blockquote>
+<hr>
+<h1 id="11-主析取范式"><a href="#11-主析取范式" class="headerlink" title="11.主析取范式"></a>11.主析取范式</h1><blockquote>
+<p>若一个命题公式的析取范式为$A_1 \vee A_2 \vee … \vee A_n(n≥1)$，其中<strong>每个</strong>$A_i(i=1,2,…,n)$都是小项，则称之为该命题公式的主析取范式。</p>
+</blockquote>
+<h2 id="求法"><a href="#求法" class="headerlink" title="求法"></a>求法</h2><h3 id="补全法"><a href="#补全法" class="headerlink" title="补全法"></a>补全法</h3><p>(此处为非考内容，考试过后再补）</p>
+<ol>
+<li><p>先写出给定公式的析取范式</p>
+<p>$A_1 \vee A_2 \vee … \vee A_n$</p>
+</li>
+<li><p>然后把每一项都变成小项，为使每个$A_i$都变成小项，对缺少变元的项$A_i$要补全变元，比如缺变元R，就用”$\wedge (R\vee \neg R)$”的形式补R。</p>
+</li>
+<li><p>用分配律等公式加以整理。</p>
+</li>
+</ol>
+<p>例：求$P\to Q$的主析取范式</p>
+<p>略……</p>
+<h3 id="真值表法"><a href="#真值表法" class="headerlink" title="真值表法"></a>真值表法</h3><p>（用于考试）</p>
+<ol>
+<li>列出给定公式的真值表</li>
+<li>找出该公式真值表中<strong>每个为”T”行的赋值</strong>所<strong>对应的小项</strong></li>
+<li>用$\vee$连接上述小项即可</li>
+</ol>
+<p>例：求$(P\vee Q)\to (P\leftrightarrow Q)$的主析取范式</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">P</th>
+<th style="text-align:center">Q</th>
+<th style="text-align:center">$P\vee Q$</th>
+<th style="text-align:center">$P \leftrightarrow Q$</th>
+<th style="text-align:center">$(P\vee Q)\to (P\leftrightarrow Q)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center"><strong>T</strong></td>
+</tr>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+</tr>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+</tr>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center"><strong>T</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>主析取范式：<script type="math/tex">(P\vee Q)\to (P\leftrightarrow Q) \iff m_{00} \vee m_{11} \iff (\neg P\wedge \neg Q)\vee (P\wedge Q) \iff M_0 \vee M_3\iff \sum_{0,3}</script></p>
+<p><strong>定理：</strong></p>
+<blockquote>
+<p>在真值表中，一个<strong>使公式的真值</strong>为T的<strong>赋值</strong>所对应的<strong>小项的合取</strong>，即为此公式的主析取范式。</p>
+</blockquote>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><blockquote>
+<p><strong>析取范式</strong>每个项都是命题变元或其否定的<strong>合取式</strong>，$n$个命题变元（出现且仅一次）的合取式就是小项，<strong>小项</strong>的<strong>析取</strong>就是主析取范式</p>
+</blockquote>
+<hr>
+<h1 id="12-大项"><a href="#12-大项" class="headerlink" title="12.大项"></a>12.大项</h1><blockquote>
+<p>$n$个命题变元的<strong>析取式</strong>，其中每个变元必出现且仅出现一次（以<strong>本身</strong>或<strong>否定形式</strong>出现），称做布尔析取，也称作大项。</p>
+</blockquote>
+<p>例如：含有两个命题变元$(P,Q)$的大项 $P\vee Q,P\vee \neg Q,\neg P\vee Q,\neg P\vee \neg Q$</p>
+<blockquote>
+<p>若有$n$个变元，则有$2^n$个大项。</p>
+</blockquote>
+<h2 id="大项编码"><a href="#大项编码" class="headerlink" title="大项编码"></a>大项编码</h2><blockquote>
+<p>与小项正好相反！0代表变元本身，1代表变元的否定</p>
+<p>大项用$M$表示</p>
+</blockquote>
+<p>例如：</p>
+<p>$M_{00} \iff P\vee Q$</p>
+<p>$M_{01} \iff P \vee \neg Q$</p>
+<p>$M_{10} \iff \neg P\vee Q$</p>
+<p>$M_{11} \iff \neg P\vee \neg Q$</p>
+<p>$M_{101} \iff \neg P\vee Q \vee \neg R$</p>
+<p>等等…</p>
+<p>显然$M_i \iff \neg m_i$</p>
+<p>例：$M<em>{011} \iff P\vee \neg Q \vee \neg R \iff \neg(\neg P \wedge Q\wedge R) \iff \neg m</em>{011}$</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center">$M_{11}$</th>
+<th style="text-align:center">$M_{10}$</th>
+<th style="text-align:center">$M_{01}$</th>
+<th style="text-align:center">$M_{00}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"><strong>P</strong></td>
+<td style="text-align:center"><strong>Q</strong></td>
+<td style="text-align:center">$P\vee Q$</td>
+<td style="text-align:center">$P\vee \neg Q$</td>
+<td style="text-align:center">$\neg P\vee Q$</td>
+<td style="text-align:center">$\neg P\vee \neg Q$</td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center"><strong>F</strong></td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center"><strong>F</strong></td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+</tr>
+<tr>
+<td style="text-align:center">01</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center"><strong>F</strong></td>
+<td style="text-align:center">T</td>
+</tr>
+<tr>
+<td style="text-align:center">00</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center"><strong>F</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<blockquote>
+<p>每个大项<strong>当且仅当</strong>其<strong>赋值</strong>与<strong>编码</strong>相同时，其真值为F。其余$2^n-1$组赋值均使该大项的真值为T。</p>
+</blockquote>
+<p>也可以这么表示，0表示变元本身，1表示其否定</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">P,Q</th>
+<th style="text-align:center">$P\vee Q$</th>
+<th style="text-align:center">$P\vee \neg Q$</th>
+<th style="text-align:center">$\neg P \vee Q$</th>
+<th style="text-align:center">$\neg P \vee \neg Q$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">T,T</td>
+<td style="text-align:center">T,T</td>
+<td style="text-align:center">T,F</td>
+<td style="text-align:center">F,T</td>
+<td style="text-align:center">F,F</td>
+</tr>
+<tr>
+<td style="text-align:center">编码</td>
+<td style="text-align:center">00</td>
+<td style="text-align:center">01</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">11</td>
+</tr>
+<tr>
+<td style="text-align:center">表示</td>
+<td style="text-align:center">$m_{00}$</td>
+<td style="text-align:center">$m_{01}$</td>
+<td style="text-align:center">$m_{10}$</td>
+<td style="text-align:center">$m_{11}$</td>
+</tr>
+<tr>
+<td style="text-align:center">十进制</td>
+<td style="text-align:center">$m_0$</td>
+<td style="text-align:center">$m_1$</td>
+<td style="text-align:center">$m_2$</td>
+<td style="text-align:center">$m_3$</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="性质-3"><a href="#性质-3" class="headerlink" title="性质"></a>性质</h2><blockquote>
+<p>任何两个大项的析取都为T。$M_i \vee M_j \iff T(i \ne j)$</p>
+<p>所有大项的合取式为永假式，记作<script type="math/tex">\displaystyle\Pi _{i=0}^{2n-1}M_i \iff M_0 \wedge M_1 \wedge ... \wedge M_{2n-1} \iff F</script></p>
+</blockquote>
+<hr>
+<h1 id="13-主合取范式"><a href="#13-主合取范式" class="headerlink" title="13.主合取范式"></a>13.主合取范式</h1><blockquote>
+<p>若一命题公式的合取范式为$A_1 \wedge A_2 \wedge … \wedge A_n(n≥1)$，其中<strong>每个</strong>$A_i(i=1,2,…,n)$都是大项，则称之为该命题公式的主合取范式。</p>
+</blockquote>
+<h2 id="求法-1"><a href="#求法-1" class="headerlink" title="求法"></a>求法</h2><h3 id="补全法-1"><a href="#补全法-1" class="headerlink" title="补全法"></a>补全法</h3><p>（非考点…考后补齐）</p>
+<ol>
+<li><p>写出给定公式的合取范式，$A_1 \wedge A_2 \wedge … \wedge A_n$</p>
+</li>
+<li><p>然后把每一项都变成大项，为使每个$A_i$都变成大项，对缺少变元的项$A_i$要补全变元，比如缺变元R，就用”$\vee (R\wedge \neg R)$”的形式补R。</p>
+</li>
+<li>用分配律等公式加以整理。</li>
+</ol>
+<p>例：$(P\to Q)\to R$的主合取范式</p>
+<p>略……</p>
+<h3 id="真值表法-1"><a href="#真值表法-1" class="headerlink" title="真值表法"></a>真值表法</h3><p>（考点内容）</p>
+<ol>
+<li>列出给定公式的真值表</li>
+<li>找到该公式真值表中每个为”F”行的赋值所对应的大项。</li>
+<li>用”$\wedge$”连接上述大项即可。</li>
+</ol>
+<p>例：求$(P\vee Q)\to (P\leftrightarrow Q)$的主合取范式</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">P</th>
+<th style="text-align:center">Q</th>
+<th style="text-align:center">$P\vee Q$</th>
+<th style="text-align:center">$P\leftrightarrow Q$</th>
+<th style="text-align:center">$(P\vee Q)\to (P\leftrightarrow Q)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+</tr>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+</tr>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+</tr>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>主合取范式：<script type="math/tex">(P\vee Q)\to (P\leftrightarrow Q) \iff M_{01} \wedge M_{10} \iff (P \vee \neg Q) \wedge(\neg P\vee Q) \iff M_2 \wedge M_1 \iff \Pi_{1,2}</script></p>
+<p><strong>定理</strong></p>
+<blockquote>
+<p>在真值表中，一个<strong>使公式的真值</strong>为F的<strong>赋值</strong>所对应的<strong>大项的析取</strong>，即为此公式的主合取范式。</p>
+</blockquote>
+<h3 id="总结-1"><a href="#总结-1" class="headerlink" title="总结"></a>总结</h3><blockquote>
+<p><strong>合取范式</strong>每个项都是命题变元或其否定的<strong>析取式</strong>，$n$个命题变元（出现且仅一次）的析取式就是大项，<strong>大项</strong>的<strong>合</strong>取就是主合取范式。</p>
+</blockquote>
+<hr>
+<h1 id="14-有效结论"><a href="#14-有效结论" class="headerlink" title="14.有效结论"></a>14.有效结论</h1><blockquote>
+<p>当且仅当$A\to C$为一个重言式（永真式），即$A\Longrightarrow C$，称C是A的有效结论。</p>
+</blockquote>
+<hr>
+<h1 id="15-命题逻辑的推理"><a href="#15-命题逻辑的推理" class="headerlink" title="15.命题逻辑的推理"></a>15.命题逻辑的推理</h1><blockquote>
+<p>假设<strong>若干前</strong>提成立，使用一些公认的<strong>规则</strong>，得到一个<strong>有效结论</strong>，这个<strong>过程</strong>就叫推理。</p>
+</blockquote>
+<p>推理的过程就是证明<strong>永真蕴含式</strong>的过程。</p>
+<p>令$H_1,H_2,…,H_n$是已知的命题公式（前提），若有$H_1 \wedge H_2 \wedge …\wedge H_n \Longrightarrow C$，则称C是$H_1,H_2,…,H_n$的有效结论，简称结论。</p>
+<p><strong>推理方法：</strong></p>
+<ol>
+<li>真值表法（憨憨方法）</li>
+<li>直接法<ol>
+<li>P规则：引入前提（在推理过程中，可以随时引入前提）</li>
+<li>T规则：引入结论（在推理过程中，如果前面有<strong>一个或几个</strong>公式<strong>重言蕴含公式S</strong>，则可将S纳入推理过程中），也就是使用公认的等价式，蕴含式。</li>
+</ol>
+</li>
+<li>间接法：条件论证，反证法</li>
+</ol>
+<h2 id="直接推理"><a href="#直接推理" class="headerlink" title="直接推理"></a>直接推理</h2><blockquote>
+<p>直接推理就是由一组前提，利用<strong>P规则</strong>，<strong>T规则</strong>直接推演得到有效结论的方法。<strong>I</strong>代表使用了<strong>蕴含式</strong>，<strong>E</strong>代表使用了<strong>等价式</strong>。</p>
+</blockquote>
+<p>例：求证$P\to Q,Q\to R,P \Longrightarrow R$</p>
+<p>分：有三个前提，用来证明是否蕴含R这个结论</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">前提或结论</th>
+<th style="text-align:center">注释列</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">$(1)$</td>
+<td style="text-align:center">P</td>
+<td style="text-align:center">P$(引入前提)$</td>
+</tr>
+<tr>
+<td style="text-align:center">$(2)$</td>
+<td style="text-align:center">$P\to Q$</td>
+<td style="text-align:center">P</td>
+</tr>
+<tr>
+<td style="text-align:center">$(3)$</td>
+<td style="text-align:center">Q</td>
+<td style="text-align:center">$T(1)(2)I$（得到结论）</td>
+</tr>
+<tr>
+<td style="text-align:center">$(4)$</td>
+<td style="text-align:center">$Q\to R$</td>
+<td style="text-align:center">P</td>
+</tr>
+<tr>
+<td style="text-align:center">$(5)$</td>
+<td style="text-align:center">R</td>
+<td style="text-align:center">$T(3)(4)I$</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="间接推理-非考点"><a href="#间接推理-非考点" class="headerlink" title="间接推理(非考点)"></a>间接推理(非考点)</h2><h3 id="CP规则"><a href="#CP规则" class="headerlink" title="CP规则"></a>CP规则</h3><blockquote>
+<p>如果$H_1\wedge H_2\wedge…\wedge H_n\wedge R \Longrightarrow S$，则$H_1\wedge H_2\wedge…\wedge H_n \Longrightarrow R\to S$。</p>
+</blockquote>
+<p>证明：因为$H_1\wedge H_2\wedge …\wedge H_n\wedge R \Longrightarrow S$，则$(H_1\wedge H_2\wedge …\wedge H_n\wedge R)\to S$是永真式。</p>
+<p>而$(H_1\wedge H_2\wedge …\wedge H_n\wedge R)\to S $</p>
+<p>$\iff \neg(H_1\wedge H_2\wedge …\wedge H_n\wedge R)\vee S $</p>
+<p>$\iff \neg(H_1\wedge H_2\wedge …\wedge H_n)\vee (\neg R\vee S)$</p>
+<p>$\iff (H_1\wedge H_2\wedge …\wedge H_n)\to (R\to S)$</p>
+<p>所以$(H_1\wedge H_2\wedge …\wedge H_n)\to (R\to S)$是永真式</p>
+<p>即$(H_1\wedge H_2\wedge …\wedge H_n)\Longrightarrow(R\to S)$，定理得证。</p>
+<p>例：$P\to (Q\to S),\neg R\vee P,Q\Longrightarrow R\to S$</p>
+<p>证明：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">$(1)$</th>
+<th style="text-align:center">$R$</th>
+<th style="text-align:center">$P$（附加前提）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">$(2)$</td>
+<td style="text-align:center">$\neg R \vee P$</td>
+<td style="text-align:center">P</td>
+</tr>
+<tr>
+<td style="text-align:center">$(3)$</td>
+<td style="text-align:center">$P$</td>
+<td style="text-align:center">$T(1)(2)I$</td>
+</tr>
+<tr>
+<td style="text-align:center">$(4)$</td>
+<td style="text-align:center">$P\to (Q\to S)$</td>
+<td style="text-align:center">P</td>
+</tr>
+<tr>
+<td style="text-align:center">$(5)$</td>
+<td style="text-align:center">$Q\to S$</td>
+<td style="text-align:center">$T(3)(4)I$</td>
+</tr>
+<tr>
+<td style="text-align:center">$(6)$</td>
+<td style="text-align:center">$Q$</td>
+<td style="text-align:center">P</td>
+</tr>
+<tr>
+<td style="text-align:center">$(7)$</td>
+<td style="text-align:center">$S$</td>
+<td style="text-align:center">$T(5)(6)I$</td>
+</tr>
+<tr>
+<td style="text-align:center">$(8)$</td>
+<td style="text-align:center">$R\to S$</td>
+<td style="text-align:center">CP</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>证毕。</p>
+<h3 id="反证法"><a href="#反证法" class="headerlink" title="反证法"></a>反证法</h3><blockquote>
+<p>若要证明$H_1,H_2,…,H_n \Longrightarrow C$，只要证明${H_1,H_2,…,H_n,\neg C}$是不相容的即可。</p>
+</blockquote>
+<hr>
+<blockquote>
+<p> 相容定义：设$H_1,H_2,…,H_n$是命题公式，$P_1,P_2,…,P_m$是公式中的命题变元。如果对$P_1,P_2,…,P_m$，至少有一组赋值使得$H_1\wedge H_2\wedge…\wedge H_n$的真值为T，则称公式集合${H_1,H_2,…,H_n}$是相容的（也称是一致的）。</p>
+<p><strong>不相容定义：</strong>如果对$P_1,P_2,…,P_m$的每一组赋值，都使得$H_1\wedge H_2\wedge…\wedge H_n$的真值为F，则称公式集合${H_1,H_2,…,H_n}$是不相容的（也称是不一致的）。</p>
+</blockquote>
+<p>即：若要证明$H_1,H_2,…,H_n \Longrightarrow C$，只要证明$H_1\wedge H_2\wedge…\wedge H_n \wedge\neg C$是个矛盾式即可。</p>
+<p><strong>定理</strong></p>
+<blockquote>
+<p>若$H_1\wedge H_2\wedge…\wedge H_n \wedge\neg C$是个矛盾式，则$H_1,H_2,…,H_n \Longrightarrow C$成立。</p>
+</blockquote>
+<p>证明：</p>
+<p>设$H_1\wedge H_2\wedge…\wedge H_n \wedge\neg C$是个矛盾式，则$\neg(H_1\wedge H_2\wedge…\wedge H_n \wedge\neg C)$是永真式。而</p>
+<p>​        $\neg(H_1\wedge H_2\wedge…\wedge H_n \wedge\neg C)$</p>
+<p>$\iff \neg(H_1\wedge H_2\wedge…\wedge H_n) \vee C$</p>
+<p>$\iff (H_1\wedge H_2\wedge…\wedge H_n) \to C$</p>
+<p>于是$(H_1\wedge H_2\wedge…\wedge H_n) \to C$是一个永真式。</p>
+<p>所以$(H_1\wedge H_2\wedge…\wedge H_n) \Longrightarrow C$</p>
+<p>证毕。</p>
+<p>略…….</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">霜晨月</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://datasickle.gitee.io/2020/12/20/chi-san-shu-xue/ming-ti-luo-ji/">http://datasickle.gitee.io/2020/12/20/chi-san-shu-xue/ming-ti-luo-ji/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">霜晨月</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">
+                                    <span class="chip bg-color">离散数学</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%91%BD%E9%A2%98%E9%80%BB%E8%BE%91/">
+                                    <span class="chip bg-color">命题逻辑</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2020/12/23/java/xian-cheng/">
+                    <div class="card-image">
+                        
+                        <img src="https://pic.downk.cc/item/5fe343e93ffa7d37b3d9629c.jpg" class="responsive-img" alt="线程">
+                        
+                        <span class="card-title">线程</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-12-23
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/JAVA/" class="post-category">
+                                    JAVA
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Java/">
+                        <span class="chip bg-color">Java</span>
+                    </a>
+                    
+                    <a href="/tags/Java%E5%9F%BA%E7%A1%80/">
+                        <span class="chip bg-color">Java基础</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%9E%9A%E4%B8%BE/">
+                        <span class="chip bg-color">枚举</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/12/19/java/zhu-jie/">
+                    <div class="card-image">
+                        
+                        <img src="https://pic.downk.cc/item/5fdeabad3ffa7d37b31d4037.jpg" class="responsive-img" alt="注解">
+                        
+                        <span class="card-title">注解</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-19
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/JAVA/" class="post-category">
+                                    JAVA
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Java/">
+                        <span class="chip bg-color">Java</span>
+                    </a>
+                    
+                    <a href="/tags/Java%E5%9F%BA%E7%A1%80/">
+                        <span class="chip bg-color">Java基础</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%B3%A8%E8%A7%A3/">
+                        <span class="chip bg-color">注解</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h1, h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="5385719508"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2020-2021</span>
+            
+            <span id="year">2020</span>
+            <a href="/about" target="_blank">霜晨月</a>
+            |&nbsp;框架&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;主题&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">17.9k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2020";
+                    var startMonth = "12";
+                    var startDate = "17";
+                    var startHour = "22";
+                    var startMinute = "52";
+                    var startSecond = "32";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+    
+    <script type="text/javascript" size="150" alpha='0.6'
+        zIndex="-1" src="/libs/background/ribbon.min.js" async="async"></script>
+    
+
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+    <script src="/live2d-widget/autoload.js"></script>
+
+
+</body>
+
+</html>

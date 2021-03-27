@@ -1,0 +1,1542 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="图论, 霜晨月">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>图论 | 霜晨月</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.2.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="霜晨月" type="application/atom+xml">
+</head>
+
+
+
+
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">霜晨月</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a target="_blank" rel="noopener" href="https://shuangchenyue.top/" class="waves-effect waves-light">
+
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>正堂</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
+    </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="https://datasickle.gitee.io/">
+          
+          <i class="fas fa-house-damage" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>镜像站</span>
+        </a>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>路引</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友人帐</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">霜晨月</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="javascript:;">
+			
+				<i class="fa-fw fas fa-home"></i>
+			
+			正堂
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="https://datasickle.gitee.io/ " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-house-damage" style="position: absolute;left:50px" ></i>
+			      
+		          <span>镜像站</span>
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			路引
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友人帐
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('在？输密码🔒')).toString(CryptoJS.enc.Hex)) {
+                alert('⚠️警告！密码错误！有坏人入侵！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/graph-theory-cover.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">图论</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <style> 
+            /*小屏幕下(手机类)的样式*/ 
+            @media only screen and (max-width: 600px) { 
+                .ipage { 
+                    padding: 15px 23px 29px; 
+                } 
+                .ipage:after { 
+                    left: 36px; 
+                } 
+                .ipage::before { 
+                    right: 36px; 
+                } 
+                .ipage p { 
+                    padding: 0 0.9em; 
+                } 
+            } 
+            </style>
+
+
+
+
+<!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">
+                                <span class="chip bg-color">离散数学</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%9B%BE%E8%AE%BA/">
+                                <span class="chip bg-color">图论</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/" class="post-category">
+                                离散数学
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-12-26
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2021-01-02
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    4.1k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    15 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <p>本文所对应的习题：</p>
+<blockquote>
+<p>点我传送👉<a target="_blank" rel="noopener" href="https://shimo.im/docs/CGRtJ68jytH9DhqY/">图论-习题</a></p>
+</blockquote>
+<h1 id="1-图"><a href="#1-图" class="headerlink" title="1.图"></a>1.图</h1><p><strong>图</strong>本质上是一种<strong>集合</strong>。</p>
+<p>图$(graph)$： $G=(V,E)$，由 顶点集$V(vertex)$和 边集$E(edge)$构成，其中$E$中的每一条边连接$V$中的一个或两个顶点。其中$V$是非空有限的集。</p>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/synbol.png"></p>
+<h2 id="关系"><a href="#关系" class="headerlink" title="关系"></a>关系</h2><h3 id="关联"><a href="#关联" class="headerlink" title="关联"></a>关联</h3><blockquote>
+<p>指<strong>点与边</strong>之间的的关系。若一个点与是一条边的顶点之一，则点与边是关联的。如$v_1$,$v_2$都与$e_1$关联。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/01.png"></p>
+<h3 id="邻接"><a href="#邻接" class="headerlink" title="邻接"></a>邻接</h3><blockquote>
+<p>由一条边$(e_1)$所关联的两个顶点$(v_1,v_2)$，称这两个顶点是相邻的，也说这两个顶点的关系为<strong>邻接</strong>。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/02.png"></p>
+<h3 id="环"><a href="#环" class="headerlink" title="环"></a>环</h3><blockquote>
+<p>只和一个顶点关联的边。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/03.png"></p>
+<h3 id="平行边（多重边）"><a href="#平行边（多重边）" class="headerlink" title="平行边（多重边）"></a>平行边（多重边）</h3><blockquote>
+<p>关联一对顶点的无向边如果<strong>多于$1$条</strong>，则称这些边为平行边。如图$G$中，关联$v_1$与$v_1$的有$e_1$与$e_2$这两条边，所以$e_1$与$e_2$为平行边。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/04.png"></p>
+<hr>
+<h2 id="图的分类"><a href="#图的分类" class="headerlink" title="图的分类"></a>图的分类</h2><h3 id="n阶图"><a href="#n阶图" class="headerlink" title="n阶图"></a>n阶图</h3><blockquote>
+<p>图中的<strong>顶点数</strong>称作图的<strong>阶</strong>，$n$的顶点的图称作$n$<strong>阶图</strong>。如下图$G$，顶点数有$3$个，所以是$3$阶图。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/08.png"></p>
+<h3 id="多重图"><a href="#多重图" class="headerlink" title="多重图"></a>多重图</h3><blockquote>
+<p>包含<strong>平行边（多重边）</strong>的图</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/04.png"></p>
+<h3 id="简单图"><a href="#简单图" class="headerlink" title="简单图"></a>简单图</h3><blockquote>
+<p>既不包含<strong>平行边</strong>，也不包含<strong>环</strong>的图</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/01.png"></p>
+<h3 id="有向图"><a href="#有向图" class="headerlink" title="有向图"></a>有向图</h3><blockquote>
+<p>图中所有的边都<strong>有方向</strong></p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/05.png"></p>
+<h3 id="无向图"><a href="#无向图" class="headerlink" title="无向图"></a>无向图</h3><blockquote>
+<p>图中所有的边都<strong>没有方向</strong></p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/04.png"></p>
+<h3 id="零图"><a href="#零图" class="headerlink" title="零图"></a>零图</h3><blockquote>
+<p>$|E| = 0$，边集为$0$。即图中<strong>没有边</strong>。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/06.png"></p>
+<h3 id="平凡图"><a href="#平凡图" class="headerlink" title="平凡图"></a>平凡图</h3><blockquote>
+<p>$|E| = 0$ ，$|V| = 0$。边集为$0$，顶点集为$1$。即图中只有一个顶点，其他什么也没有。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/07.png"></p>
+<h3 id="完全图"><a href="#完全图" class="headerlink" title="完全图"></a>完全图</h3><blockquote>
+<p>设$G$为$n$<strong>阶图</strong>，若$G$中的<strong>每个顶点</strong>都<strong>与其他</strong>的$n-1$个顶点相邻，则称$G$为$n$阶完全图，记作 $K_n$$(n≥1)$。$K_n$的边数：$\frac{n*(n-1)}{2}$<br>如下图$G$，$G$为$4$阶图，$G$中的每个顶点都与其他$4-1$个顶点相邻，即与其他$3$个顶点相邻，所以$G$为$4$阶完全图，记作$K_4$。$K_4$的边数为：$\frac{4*(4-1)}{2}=6$</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/09.png"></p>
+<h3 id="补图"><a href="#补图" class="headerlink" title="补图"></a>补图</h3><blockquote>
+<p>设$G$为$n$阶无向简单图（原图）。以$V$为顶点集，以所有<strong>为了能将原图$G$成为完全图$K_n$</strong>而<strong>添加的边</strong>为边集组成的图，成为$G$的补图。记作$\bar{G} $。$K_n-G$</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/15.png"></p>
+<h3 id="子图"><a href="#子图" class="headerlink" title="子图"></a>子图</h3><blockquote>
+<p>设图$G=(V,E)$，如果图$G’=(V’,E’)$，满足：$V’⊆V,E’⊆E$，则$G’$为$G$的子图。</p>
+<p>如下图$G$，拥有12个子图。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/16.png"></p>
+<h3 id="生成子图"><a href="#生成子图" class="headerlink" title="生成子图"></a>生成子图</h3><blockquote>
+<p>如果$G’$中的顶点个数$V’$与原图中的顶点个数$V$相同，且$E’∈E$，则称$G’$为生成子图。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/55.png"></p>
+<h3 id="同构图"><a href="#同构图" class="headerlink" title="同构图"></a>同构图</h3><blockquote>
+<p>设图$G=(V,E)$和图$G’=(V’,E’)$如果存在一 一对应映射$f:v_i→v’_i$，且$e=(v_i,v_g)$，指有一条边在$v_i$和$v_g$上，当且仅当$e’=(f(v_i),f(v_g))$，则称$G$与$G’$同构。如下图$G$与$G’$。</p>
+<p>注：一 一对应映射即为<strong>双射</strong>，既满足<strong>单射</strong>也满足<strong>满射</strong>。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/17.png"></p>
+<hr>
+<h1 id="2-度数"><a href="#2-度数" class="headerlink" title="2.度数"></a>2.度数</h1><h2 id="无向图-1"><a href="#无向图-1" class="headerlink" title="无向图"></a>无向图</h2><blockquote>
+<p>在图$G=(V,E)$中，与顶点$v$关联的<strong>边数</strong>，称做该顶点的度数$(degree)$，记作$deg(v)$。</p>
+<p>如下图$G$,与顶点$v_1$,$v_2$,$v_3$关联的边数均为$2$,所以这三个顶点的度数为$2$。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/10.png"></p>
+<h2 id="有向图-1"><a href="#有向图-1" class="headerlink" title="有向图"></a>有向图</h2><blockquote>
+<p>设$G=(V,E)$为有向图 <script type="math/tex">\begin{cases} 射向该顶点的边数，为该顶点的入度。记作 deg_-(v) \\ 从该顶点射出的边数，为该顶点的出度。记作 deg_+(v) \end{cases}</script></p>
+<p>如下有向图$G$,各个顶点的出度和入度。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/11.png"></p>
+<h2 id="最大度"><a href="#最大度" class="headerlink" title="最大度"></a>最大度</h2><blockquote>
+<p>图中结点度数的<strong>最大值</strong>。用$Δ(G)$表示。</p>
+</blockquote>
+<h2 id="最小度"><a href="#最小度" class="headerlink" title="最小度"></a>最小度</h2><blockquote>
+<p>图中结点度数的<strong>最小值</strong>。用$δ(G)$表示。</p>
+</blockquote>
+<hr>
+<h1 id="3-度数的性质"><a href="#3-度数的性质" class="headerlink" title="3.度数的性质"></a>3.度数的性质</h1><h2 id="无向图-2"><a href="#无向图-2" class="headerlink" title="无向图"></a>无向图</h2><blockquote>
+<p>1.在$G_1=(V,E)$中，所有顶点的<strong>度数之和</strong>等于边数的$2$倍。</p>
+<script type="math/tex; mode=display">\displaystyle\sum_{v∈V}deg(v)=2\left | E \right |</script><p>如下图$G_1$</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/12.png"></p>
+<blockquote>
+<p>2.在$G_2=(V,E)$中，<strong>度数</strong>是<strong>奇数的顶点数</strong>必定是<strong>偶数</strong>。如下图$G_2$中，度数是奇数的顶点数有$v_1$与$v_4$这两个，所以这样子的顶点数必定为偶数。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/13.png"></p>
+<h2 id="有向图-2"><a href="#有向图-2" class="headerlink" title="有向图"></a>有向图</h2><blockquote>
+<p>所有顶点<strong>入度之和</strong>等于所有顶点<strong>出度之和</strong>，也等于<strong>边数</strong>。如下图$G$。</p>
+<script type="math/tex; mode=display">\displaystyle\sum_{v∈V}deg_-(v)=\sum_{v∈V}deg_+(v)=|E|</script></blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/14.png"></p>
+<hr>
+<h1 id="4-路"><a href="#4-路" class="headerlink" title="4.路"></a>4.路</h1><blockquote>
+<p>给定图$G=(V’E)$，$v_0,v_1,v_2…v_n∈V$，$e_0,e_1,e_2…e_n∈E$。其中$e_i$关联于$v_i-1$和$v_i$，则称由点和边组成的交替序列$v_0,e_1,v_1,e_2,v_2,e_3…e_n,v_n$称为路($walk$)。如下图$G$。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/18.png"></p>
+<h2 id="路的分类"><a href="#路的分类" class="headerlink" title="路的分类"></a>路的分类</h2><h3 id="回路"><a href="#回路" class="headerlink" title="回路"></a>回路</h3><blockquote>
+<p>如果$v_n$=$v_0$，则称为回路$(closedwalk)$。如下图$G$，从$v_0$出发，绕了一圈，最终还是回到了$v_0$。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/19.png"></p>
+<h3 id="通路"><a href="#通路" class="headerlink" title="通路"></a>通路</h3><blockquote>
+<p>如果$∀i,∀j$，$v_i≠v_j$，则称为通路$(path)$。也就是说，一条路，它所经过的顶点各不相同，那这条路就是通路。如下图$G$，从$a$到$d$所走的路就是通路。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/20.png"></p>
+<h3 id="迹"><a href="#迹" class="headerlink" title="迹"></a>迹</h3><blockquote>
+<p>如果$∀i,∀j$，$e_i≠e_j$，则称为迹$(trail)$。也就是说，一条路，他所经过的边各不相同，那这条路就是迹。如下图$G$，从$f$到$c$所经过的边都是不重复的，所以这条路是迹。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/21.png"></p>
+<h3 id="圈"><a href="#圈" class="headerlink" title="圈"></a>圈</h3><blockquote>
+<p>如果回路是通路，则成为圈$(cycle)$。如下图$G$，也就是说，从$a$出发，再回到$a$，其中所经过的顶点是不重复的，那么这条路就是圈。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/22.png"></p>
+<hr>
+<h2 id="路的性质"><a href="#路的性质" class="headerlink" title="路的性质"></a>路的性质</h2><h3 id="连通性"><a href="#连通性" class="headerlink" title="连通性"></a>连通性</h3><blockquote>
+<p>设一个图$G=(V,E)$，如果任意两个顶点之间，都存在一条路，则称图是连通的$(connectivity)$。如下图$G$。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/23.png"></p>
+<h3 id="连通分支"><a href="#连通分支" class="headerlink" title="连通分支"></a>连通分支</h3><blockquote>
+<p>即最大连通子图。</p>
+</blockquote>
+<h3 id="长度"><a href="#长度" class="headerlink" title="长度"></a>长度</h3><blockquote>
+<p>在图$G=(V,E)$中，从$v_i$到$v_j$之间所经过的边数，称为路的长度。如下图$G$，从$v_1$到$v_6$之间所经过的边数是$3$条，所以长度是$3$。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/24.png"></p>
+<h3 id="距离"><a href="#距离" class="headerlink" title="距离"></a>距离</h3><blockquote>
+<p>在无向图中，两个顶点$u,v$之间最短路的长度，称为两顶点之间的距离$(distance)$，记作$d(u,v)$。如下图$G$,$d(u,v) = 2$</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/25.png"></p>
+<h3 id="图的直径"><a href="#图的直径" class="headerlink" title="图的直径"></a>图的直径</h3><blockquote>
+<p>在无向图$G$中，顶点之间的最大距离，称为图的直径。$D=maxd(u,v)$,$u,v∈V$。</p>
+</blockquote>
+<h3 id="可达"><a href="#可达" class="headerlink" title="可达"></a>可达</h3><blockquote>
+<p>在有向图中，从$u$到$v$存在一条路，称$u$到$v$可达。如下有向图$G$，$a$到$d$就是可达的。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/26.png"></p>
+<h3 id="强连通"><a href="#强连通" class="headerlink" title="强连通"></a>强连通</h3><blockquote>
+<p>在有向图中，如果任意一堆顶点之间相互可达，则称此图为强连通。如下有向图$G$，各个顶点都相互可达。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/27.png"></p>
+<h3 id="弱连通"><a href="#弱连通" class="headerlink" title="弱连通"></a>弱连通</h3><blockquote>
+<p>若有向图不是强连通，但删去边的方向后，得到的无向图是连通的，则称该有向图是弱连通的。如下图$G$到$G’$。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/28.png"></p>
+<hr>
+<h1 id="5-图的表示"><a href="#5-图的表示" class="headerlink" title="5.图的表示"></a>5.图的表示</h1><h2 id="1-图示法"><a href="#1-图示法" class="headerlink" title="1.图示法"></a>1.图示法</h2><h2 id="2-列举法"><a href="#2-列举法" class="headerlink" title="2.列举法"></a>2.列举法</h2><h2 id="3-矩阵"><a href="#3-矩阵" class="headerlink" title="3.矩阵"></a>3.矩阵</h2><p>矩阵 <script type="math/tex">\begin{cases} 邻接矩阵(考点) \\关联矩阵(非考点)\\可达性矩阵(非考点) \end{cases}</script></p>
+<h3 id="邻接矩阵"><a href="#邻接矩阵" class="headerlink" title="邻接矩阵"></a>邻接矩阵</h3><blockquote>
+<p>设图$G=(V,E)$是一个简单图，<script type="math/tex">V={\{v_1,v_2...v_n}\}</script>，$N$阶矩阵<script type="math/tex">A(G)=(a_{ij})_{n*m}</script>,称为邻接矩阵。</p>
+<p>其中$a_{ij}=\begin{cases}1：如果v_i与v_j邻接的 \\ 0：如果v_i与v_j不邻接\end{cases}$</p>
+<p>注：<strong>完全图</strong>邻接矩阵全为$1$，零图邻接矩阵全为$0$，$a_{ij}$代表$v_i$到$v_j$的边。</p>
+<p>$∀ij$，如果$v_i$关联$v_j$，则$v_j$关联$v_i$。</p>
+</blockquote>
+<script type="math/tex; mode=display">A(G)=  
+\begin{bmatrix}  
+  a_{11}& a_{12}& \cdots  & a_{1n} \\  
+  a_{21}& a_{22}& \cdots  & a_{2n} \\  
+  \vdots & \vdots & \ddots & \vdots \\  
+  a_{m1}& a_{m2}& \cdots  & a_{mn}  
+\end{bmatrix}_{m*n}  
+=\left [ a_{ij}\right ]</script><h4 id="无向图-3"><a href="#无向图-3" class="headerlink" title="无向图"></a>无向图</h4><p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/29.png"></p>
+<p>上图$G$的邻接矩阵：</p>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/30.png"></p>
+<blockquote>
+<p>第$i$行1的个数，就是$i$的度数。关于主对角线对称。$a<em>{ij}=a</em>{ji}$</p>
+</blockquote>
+<h4 id="有向图-3"><a href="#有向图-3" class="headerlink" title="有向图"></a>有向图</h4><p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/31.png"></p>
+<p>上有向图$G$的邻接矩阵：</p>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/32.png"></p>
+<blockquote>
+<p>对<strong>有向图</strong>来说，行是<strong>出度</strong>，列是<strong>入度</strong>。</p>
+</blockquote>
+<h4 id="矩阵的乘法"><a href="#矩阵的乘法" class="headerlink" title="矩阵的乘法"></a>矩阵的乘法</h4><blockquote>
+<p><strong>第一个</strong>矩阵的<strong>第一行</strong>乘<strong>第二个</strong>矩阵的<strong>第一列</strong>，然后<strong>求和</strong>。$A(G)^2=A(G)*A(G)$。如下图$G$及其邻接矩阵的乘积。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/33.png"></p>
+<p>分析：</p>
+<p>$A(G)$中，$v_i$行$v_j$列所对应的数值表示从顶点$v_i$到顶点$v_j$的那条边，如果存在这条边，则数值为$1$，若不存在，则数值为$0$。比如$v_1$行，$v_2$列所对应的数值为$1$，也就是说，存在一条边，使得能从顶点$v_1$到顶点$v_2$，也可以说，顶点$v_1$与顶点$v_2$邻接。$(v_i,v_j∈V)$。</p>
+<p>$(A(G))^2$中，$v_i$行$v_j$列所对应的数值表示从顶点$v_i$到顶点$v_j$所经过长度为$2$的路有几条。例如，$v_2$行$v_3$列所对应的数值是$1$，则表示从从顶点$v_i$到顶点$v_j$所经过长度为$2$的路有1条，也就是$v_2-v_1-v_3$。</p>
+<p><strong>问：从$v_2$到$v_3$长度是$3$的路有几条？</strong></p>
+<blockquote>
+<p>长度是几，那么邻接矩阵就乘几次。$A(G)^3=A(G)^2*A(G)$。如下图$G$的邻接矩阵，$v_2$到$v_3$，也就是$v_2$行，$v_3$列的数值，所以是$6$条。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/34.png"></p>
+<hr>
+<h1 id="6-欧拉路"><a href="#6-欧拉路" class="headerlink" title="6.欧拉路"></a>6.欧拉路</h1><h2 id="欧拉通路"><a href="#欧拉通路" class="headerlink" title="欧拉通路"></a>欧拉通路</h2><blockquote>
+<p>给定<strong>无向图</strong>$G$，若存在一条<strong>路</strong>，经过图中每条边<strong>一次</strong>，且<strong>仅一次</strong>就能遍历所有顶点的话，则这条路叫欧拉路。如下图$G$。</p>
+</blockquote>
+<p>从$f$出发，经过$(f-e),(e-d),(d-f),(f-b),(b-a),(a-e)$，最终到达了$e$，遍历了所有的节点且只经过每条边一次。</p>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/36.png"></p>
+<h3 id="定理"><a href="#定理" class="headerlink" title="定理"></a>定理</h3><blockquote>
+<p>1.无向图$G$具有欧拉路<strong>当且仅当</strong>$G$连通且有<strong>零</strong>或<strong>两个奇数度数</strong>的节点。如下图$G_1$和$G_2$。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/37.png"></p>
+<blockquote>
+<p>2.有向图存在欧拉通路，<strong>当且仅当</strong>有向图是连通的，且除了两个顶点外，其余顶点<strong>入度等于出度</strong>，而且这两个顶点一个入度比出度大$1$，另一个入度比出度小$1$。如下图$G$。</p>
+</blockquote>
+<p> 从$e$出发，经过$(e→f),(f→b),(b→a),(a→e),(e→d),(d→f)$，到达$f$。</p>
+<p>注：</p>
+<p>有向图的欧拉通路，若要遍历每个顶点，必须从<strong>入度比出度小1</strong>的那个奇数顶点出发！</p>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/38.png"></p>
+<hr>
+<h2 id="欧拉回路"><a href="#欧拉回路" class="headerlink" title="欧拉回路"></a>欧拉回路</h2><blockquote>
+<p>给定<strong>无向图</strong>$G$，若存在一条<strong>回路</strong>，经过图中每条边<strong>一次</strong>，且<strong>仅一次</strong>就能遍历所有顶点的话，则这条路叫欧拉回路。如下图$G$。</p>
+</blockquote>
+<p>从$b$出发，经过$(b-a),(a-e),(e-b),(b-f),(f-a),(a-d),(d-e),(e-f),(f-d),(d-c),(c-b)$，最终又回到了$b$。</p>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/35.png"></p>
+<h3 id="定理-1"><a href="#定理-1" class="headerlink" title="定理"></a>定理</h3><blockquote>
+<p>1.无向图$G$具有欧拉回路，<strong>当且仅当</strong>$G$连通且<strong>所有</strong>节点<strong>度数</strong>为<strong>偶数</strong>。如下图$G$。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/39.png"></p>
+<blockquote>
+<p>2.有向图存在欧拉回路当且仅当有向图是连通的，且每个顶点<strong>入度等于出度</strong>。</p>
+</blockquote>
+<p>注：</p>
+<p>有向图的欧拉回路无论从哪个点出发都可以。</p>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/40.png"></p>
+<hr>
+<h2 id="欧拉图"><a href="#欧拉图" class="headerlink" title="欧拉图"></a>欧拉图</h2><blockquote>
+<p>含有<strong>欧拉回路</strong>的图叫做欧拉图。如下图$G$。</p>
+</blockquote>
+<p>从$b$出发，经过$(b-a),(a-e),(e-b),(b-f),(f-a),(a-d),(d-e),(e-f),(f-d),(d-c),(c-b)$，最终又回到了$b$，所以，下图具有欧拉回路，是欧拉图。</p>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/35.png"></p>
+<hr>
+<h1 id="7-哈密尔顿路（附）"><a href="#7-哈密尔顿路（附）" class="headerlink" title="7.哈密尔顿路（附）"></a>7.哈密尔顿路（附）</h1><h2 id="哈密尔顿通路"><a href="#哈密尔顿通路" class="headerlink" title="哈密尔顿通路"></a>哈密尔顿通路</h2><blockquote>
+<p>给定图$G$，若存在一条路，经过图中的<strong>每个顶点</strong>，一次且<strong>只有一次</strong>，这样的路就叫哈密尔顿路。</p>
+</blockquote>
+<h2 id="哈密尔顿回路"><a href="#哈密尔顿回路" class="headerlink" title="哈密尔顿回路"></a>哈密尔顿回路</h2><blockquote>
+<p>给定图$G$，若存在一条路，经过每个顶点<strong>恰好一次</strong>，<strong>回到</strong>出发地，就叫做哈密尔顿回路。</p>
+</blockquote>
+<h2 id="欧尔定理"><a href="#欧尔定理" class="headerlink" title="欧尔定理"></a>欧尔定理</h2><blockquote>
+<p>设$G$是$n$个顶点的图，如果$G$中的每一对顶点度数之和都大于$n$，则存在哈密尔顿回路。</p>
+<p>注：这是<strong>充分不必要</strong>的条件，可以举出反例。说明当这个条件存在时，哈密尔顿回路存在；但哈密尔顿回路存在，不一定非得满足这个条件。</p>
+</blockquote>
+<hr>
+<h1 id="8-平面图"><a href="#8-平面图" class="headerlink" title="8.平面图"></a>8.平面图</h1><blockquote>
+<p>设$G=(V,E)$是无向图，如果能够吧$G$<strong>画在一个平面</strong>上，使得<strong>任意两条边都不相交</strong>，则称$G$为平面图。如下图$G_1→G_1’$和$G_2→G_2’$。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/41.png"></p>
+<p>如下图$G$，就不能画成平面图。下图是一个完全二分图$k_{3,3}$。</p>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/42.png"></p>
+<h2 id="面"><a href="#面" class="headerlink" title="面"></a>面</h2><blockquote>
+<p>设$G=(V’E)$是连通平面图，由图中的<strong>边</strong>所<strong>包围</strong>的<strong>区域</strong>，在区域内<strong>不包含</strong>任何<strong>顶点</strong>或<strong>边</strong>，这样的区域称为一个<strong>面</strong>。如下图$G$，共有$6$个面，最外面的也是$1$个面。$6$号面称做<strong>外部面</strong>或<strong>无限面</strong>，其余面称做<strong>内部面</strong>或<strong>有限面</strong>。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/46.png"></p>
+<h2 id="边界"><a href="#边界" class="headerlink" title="边界"></a>边界</h2><blockquote>
+<p>包围住这个面的<strong>回路</strong>就是边界。如下图$G$。从$a$出发，经过$(a-b),(b-f),(f-e),(e-a)$，最后又回到了$a$。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/47.png"></p>
+<h2 id="次数"><a href="#次数" class="headerlink" title="次数"></a>次数</h2><blockquote>
+<p>边界的长度（边的数目）称为面的次数。如下图$G$。面的次数是边数的$2$倍。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/48.png"></p>
+<h2 id="定理-2"><a href="#定理-2" class="headerlink" title="定理"></a>定理</h2><blockquote>
+<p>1.一个有限平面图：所有面的次数之和等于边数的$2$倍。</p>
+<p>2.设$G$是<strong>连通简单</strong>平面图，有$v$个顶点，有$e$条边，则有$e≤3v-6$。如下图$G$。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/50.png"></p>
+<h2 id="欧拉定理"><a href="#欧拉定理" class="headerlink" title="欧拉定理"></a>欧拉定理</h2><blockquote>
+<p>一个连通平面图：有$v$个顶点，$e$条边，$r$个面，则有欧拉公式：$v-e+r=2$。如下图$G$。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/49.png"></p>
+<hr>
+<h1 id="9-树"><a href="#9-树" class="headerlink" title="9.树"></a>9.树</h1><blockquote>
+<p>一个<strong>连通</strong>且<strong>无回路</strong>的图称为树$(tree)$。</p>
+</blockquote>
+<h2 id="树叶"><a href="#树叶" class="headerlink" title="树叶"></a>树叶</h2><blockquote>
+<p>树中度数为$1$的顶点称为树叶$(leaf)$。如下图$G$。</p>
+</blockquote>
+<h2 id="内点"><a href="#内点" class="headerlink" title="内点"></a>内点</h2><blockquote>
+<p>树中度数大于$1$的顶点称为内点。如下图$G$。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/51.png"></p>
+<h2 id="森林"><a href="#森林" class="headerlink" title="森林"></a>森林</h2><blockquote>
+<p>一个<strong>不连通</strong>，<strong>无回路</strong>的图叫森林$(forest)$。森林中的每一个<strong>连通分支</strong>都是树。如下图$G$。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/52.png"></p>
+<h2 id="树的性质"><a href="#树的性质" class="headerlink" title="树的性质"></a>树的性质</h2><p>1.连通、无回路的图</p>
+<p>2.$|V|=v,|E=e|,v=e+1$。顶点数等于边数+1</p>
+<p>3.连通的，但删除任何一条都不连通。</p>
+<p>4.每对顶点之间<strong>有且只有</strong>一条路</p>
+<p>5.至少有两片叶子</p>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/53.png"></p>
+<hr>
+<h1 id="10-生成树"><a href="#10-生成树" class="headerlink" title="10.生成树"></a>10.生成树</h1><p>设$G$为无向图</p>
+<blockquote>
+<p>$G$的生成树：$T$是$G$的<strong>生成子图</strong>并且是<strong>树</strong>。</p>
+<p>生成树$T$的树枝：$T$中的<strong>边</strong>。</p>
+</blockquote>
+<p>如下图，$G’$便是无向图$G$的生成树。</p>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/56.png"></p>
+<h2 id="定理-3"><a href="#定理-3" class="headerlink" title="定理"></a>定理</h2><blockquote>
+<p>无向图$G$具有生成树，当且仅当$G$连通。</p>
+</blockquote>
+<h2 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h2><blockquote>
+<p>$G$为$n$阶$m$条边的<strong>无向连通图</strong>，则$m≥n-1$。也就是说，无向连通图中，边数大于或等于顶点减1。如下图$G$</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/57.png"></p>
+<blockquote>
+<p>可以根据$m-n+1$的结果来算出，从<strong>无向连通图</strong>中得到<strong>生成树</strong>，需要删除几条边。如下图。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/58.png"></p>
+<h2 id="权"><a href="#权" class="headerlink" title="权"></a>权</h2><blockquote>
+<p>给一个图的每一条边一个<strong>数值</strong>，这个数值就称为这条边的权。如下图$G$。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/59.png"></p>
+<h2 id="最小生成树"><a href="#最小生成树" class="headerlink" title="最小生成树"></a>最小生成树</h2><blockquote>
+<p>带权图中的所有生成树中，<strong>权重最小</strong>的那棵生成树，叫做最小生成树。</p>
+</blockquote>
+<hr>
+<h1 id="11-有向树"><a href="#11-有向树" class="headerlink" title="11.有向树"></a>11.有向树</h1><blockquote>
+<p>边<strong>有方向</strong>的树。如下图$G$。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/60.png"></p>
+<hr>
+<h1 id="12-根树"><a href="#12-根树" class="headerlink" title="12.根树"></a>12.根树</h1><blockquote>
+<p>仅有一个顶点入度为$0$，其余所有顶点入度均为$1$，这样的有向树称为根树。如下图$G$。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/61.png"></p>
+<p>根数的画法：根放最上方，省去所有有向边上的箭头。如下图$T$。</p>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/62.png"></p>
+<h2 id="根树的几个定义"><a href="#根树的几个定义" class="headerlink" title="根树的几个定义"></a>根树的几个定义</h2><blockquote>
+<p>1.树根：入度为$0$的顶点</p>
+<p>2.叶子：出度为$0$的顶点</p>
+<p>3.内点：出度不为$0$的顶点</p>
+<p>4.层数：从树根到$v$的通路长度</p>
+<p>5.树高：树中层数最大的顶点的层数</p>
+<p>6.祖先与后裔：在根树$T$中，若从$v_i$到$v_j$有路，则称$v_i$的是$v_j$的祖先，反过来，$v_j$就是$v_i$的后裔。</p>
+<p>7.父亲与儿子：如果$<v_i,v_j>$是根树$T$中的一条边，则称$v_i$是$v_j$的父结点，反过来，$v_j$是$v_i$的子结点。</v_i,v_j></p>
+<p>8.兄弟：具有相同父亲的结点。</p>
+</blockquote>
+<hr>
+<h1 id="13-m-叉树"><a href="#13-m-叉树" class="headerlink" title="13.$m$叉树"></a>13.$m$叉树</h1><blockquote>
+<p>如果一棵根树，其所有顶点的出度小于等于$m$，则称为$m$叉树。如下图$T$，其所有顶点的出度都小于或等于2，所以这是一个二叉树。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/63.png"></p>
+<h2 id="完全-m-叉树"><a href="#完全-m-叉树" class="headerlink" title="完全$m$叉树"></a>完全$m$叉树</h2><blockquote>
+<p>如果一棵$m$叉树所有顶点的出度恰好等于$m$或$0$，则称这棵树为完全$m$叉树。如下图$T$。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/64.png"></p>
+<h2 id="定理-4"><a href="#定理-4" class="headerlink" title="定理"></a>定理</h2><blockquote>
+<p>1.当$m$为$2$时，则为二叉树，则有完全二叉树。</p>
+<p>2.一棵完全$m$叉树，叶子树为$t$，内点数为$i$，则有$(m-1)i=t-1$。如下完全二叉树$T$。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/65.png"></p>
+<hr>
+<h1 id="14-有序树"><a href="#14-有序树" class="headerlink" title="14.有序树"></a>14.有序树</h1><blockquote>
+<p>设$T$时一棵根树，把处于<strong>同一层</strong>的<strong>顶点</strong>标定<strong>次序</strong>，则称为有序树。如下图$T$。</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/66.png"></p>
+<h2 id="遍历"><a href="#遍历" class="headerlink" title="遍历"></a>遍历</h2><blockquote>
+<p>遍历$(traversal)$$\begin{cases}前序(Preorder)：先访问父亲，再访问孩子 \\ 中序(Inorder)：先访问长子，再访问父亲，后访问次子 \\ 后序(Postorder)：先访问所有孩子，再访问父亲\end{cases}$</p>
+</blockquote>
+<p><img src="https://gitee.com/datasickle/blogimage/raw/master/Discrete-mathematics/graph-theory/66.png"></p>
+<p>对于上图$T$来说：</p>
+<p>前序遍历：$a-b-e-f-c-g-i-d-h-j-k$</p>
+<p>中序遍历：$e-b-f-a-i-g-c-j-h-k-d$</p>
+<p>后序遍历：$e-f-b-i-g-c-j-k-h-d-a$</p>
+<hr>
+<p>离散数学-基础-图论已整理完毕，感谢阅读。</p>
+<p>2020/12/31 十一月十七 10：40 今天可真冷啊</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">霜晨月</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://datasickle.gitee.io/2020/12/26/chi-san-shu-xue/tu-lun/">http://datasickle.gitee.io/2020/12/26/chi-san-shu-xue/tu-lun/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">霜晨月</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">
+                                    <span class="chip bg-color">离散数学</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%9B%BE%E8%AE%BA/">
+                                    <span class="chip bg-color">图论</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2021/03/07/java/mian-xiang-dui-xiang/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="面向对象">
+                        
+                        <span class="card-title">面向对象</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-03-07
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/JAVA/" class="post-category">
+                                    JAVA
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Java/">
+                        <span class="chip bg-color">Java</span>
+                    </a>
+                    
+                    <a href="/tags/Java%E5%9F%BA%E7%A1%80/">
+                        <span class="chip bg-color">Java基础</span>
+                    </a>
+                    
+                    <a href="/tags/%E9%9B%86%E5%90%88/">
+                        <span class="chip bg-color">集合</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/12/23/java/xian-cheng/">
+                    <div class="card-image">
+                        
+                        <img src="https://pic.downk.cc/item/5fe343e93ffa7d37b3d9629c.jpg" class="responsive-img" alt="线程">
+                        
+                        <span class="card-title">线程</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-23
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/JAVA/" class="post-category">
+                                    JAVA
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Java/">
+                        <span class="chip bg-color">Java</span>
+                    </a>
+                    
+                    <a href="/tags/Java%E5%9F%BA%E7%A1%80/">
+                        <span class="chip bg-color">Java基础</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%9E%9A%E4%B8%BE/">
+                        <span class="chip bg-color">枚举</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h1, h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="5385719508"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2020-2021</span>
+            
+            <span id="year">2020</span>
+            <a href="/about" target="_blank">霜晨月</a>
+            |&nbsp;框架&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;主题&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">17.9k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2020";
+                    var startMonth = "12";
+                    var startDate = "17";
+                    var startHour = "22";
+                    var startMinute = "52";
+                    var startSecond = "32";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+    
+    <script type="text/javascript" size="150" alpha='0.6'
+        zIndex="-1" src="/libs/background/ribbon.min.js" async="async"></script>
+    
+
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+    <script src="/live2d-widget/autoload.js"></script>
+
+
+</body>
+
+</html>
